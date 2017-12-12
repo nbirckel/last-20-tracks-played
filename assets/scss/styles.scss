@@ -1,0 +1,43 @@
+@import "variables";
+body {
+	margin:0;
+	font-family:Helvetica, Arial, sans-serif;
+	background:$background;
+}
+.logo{ display:block; margin: 0 auto;width:100px; height:100px; fill:rgba(91, 134, 229, 1);}
+[id="content"] {
+	display:flex;
+	flex-wrap:wrap;
+	width:$container-width;
+	margin:0 auto;
+	justify-content:space-around;
+}
+[id="loading"] {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.card{
+width:300px;
+height:300px;
+flex:auto;
+margin:.5em;
+padding:.5em;
+box-sizing:border-box;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+box-shadow:0px 2px 4px darken($background,30%);
+	& h2, & p {
+		color:$primary;
+		text-align:center;
+		text-shadow: 1px 1px 5px $shadow;
+	}
+}
+h1{
+	text-transform:uppercase;
+	text-align:center;
+	margin:0 0 1em;
+	color:rgba(91, 134, 229, 1)
+}
