@@ -1,6 +1,6 @@
-var key ="";
-var limit="";
-var user= "";
+var key ="50ad8f29fba1727d9f76646a56242eb0";
+var limit="20";
+var user= "nbirckel";
 
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user="+user+"&api_key="+key+"&format=json&limit="+limit+"", true);
@@ -31,7 +31,7 @@ xhr.addEventListener('readystatechange', function() {
 		link.value = trackurl;                          
 		card.setAttributeNode(link);
 			var style = document.createAttribute("style");
-			style.value = "background-image : linear-gradient(135deg, rgba(54, 209, 220, .1) 0%,rgba(91, 134, 229, .9) 100%), url("+trackImgLarge+");background-size: cover; bakground-position: 50%";
+			style.value = "background-image : linear-gradient(135deg, rgba(54, 209, 220, .1) 0%,rgba(91, 134, 229, .9) 100%), url("+trackImgLarge+");background-size: cover; bakground-position: 50% 50%;";
 			card.setAttributeNode(style);
 		var h2 = document.createElement('h2');
 		var h2Content = document.createTextNode(trackName)
